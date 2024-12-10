@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "emmet.useInlineCompletions": true,
+    "python.languageServer": "Pylance",
+    "json.schemas": [
+
+    ],
+    "files.associations" :{
+        "*html":"html",
+        "**/templates/**/*.html":"django-html",
+        "**/templates/**/*":"django-txt",
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "editor.codeActionsOnSave": {
+
+        
+
+
+    }
+}
