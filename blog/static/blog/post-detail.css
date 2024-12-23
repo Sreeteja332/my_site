@@ -48,8 +48,8 @@ body {
     font-weight: bold;
 }
 
-#summary a{
-    color:white;
+#summary a {
+    color: white;
     text-decoration: none;
 }
 
@@ -66,9 +66,10 @@ main {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
-.tag{
+
+.tag {
     background-color: white;
-    color :#390281;
+    color: #390281;
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
