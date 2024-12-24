@@ -49,7 +49,8 @@ class SinglePostView(View):
         context={
             "post":post,
             "post_tags":post.tags.all(),
-            "comment_form":ComentForm()
+            "comment_form":ComentForm(),
+            "comments":post.comments.all().order_by("-id")
         }
         return render(request,"blog/post-detail.html",context)
 
@@ -62,13 +63,14 @@ class SinglePostView(View):
             comment=comment_form.save(commit=False)
             comment.post=post
             comment.save()
-            
+
             return  HttpResponseRedirect(reverse("post-detail-page",args=[slug]))
         
         context={
             "post":post,
             "post_tags":post.tags.all(),
-            "comment_form":comment_form
+            "comment_form":comment_form,
+            "comments":post.comments.all().order_by("-id")
         }
         return render(request,"blog/post-detail.html",context)
 
